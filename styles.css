@@ -1,0 +1,34 @@
+.flex-container {
+    display: flex;
+}
+
+#header {
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 36px;
+  background-color: rgb(255, 255, 255);
+  
+}
+
+#header-logo {
+  align-items: center;
+  gap: 18px;
+}
+
+#logo-image {
+  width: 100%;
+  height: 100%;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+  list-style-type: none;
+}
+
+.nav-link, .nav-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
