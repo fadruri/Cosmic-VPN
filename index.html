@@ -4,52 +4,63 @@
     <meta charset="UTF-8" />
     <title>Cosmic VPN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    
   </head>
   <body>
-    <main>
-      <header id="header" class="flex-container">
-        <div id="header-logo" class="flex-container">
-          <div>
-            <img id="logo-img" src="./Logo-Purple-48.png" />
-          </div>
-          <h2>Cosmic VPN</h2>
+    <header id="header" class="flex-container align-center">
+      <div id="header-logo" class="flex-container">
+        <div>
+          <img id="header-img" src="./Logo-Purple-48.png" />
         </div>
+        <h2>Cosmic VPN</h2>
+      </div>
 
-        <nav id="nav-bar">
-          <ul>
-            <li>
-              <a class="nav-link" href="#introduction">What's a VPN?</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li>
-              <a class="nav-link" href="#beta">Beta-Test</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      
-      <section id="hero">
-        <h2>Securely warp across the Internet as if you were on another planet!</h2>
+      <nav id="nav-bar">
+        <ul>
+          <li>
+            <a class="nav-link" href="#hero">Beta-Test</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#introduction">What's a VPN?</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="flex-container container align-center background-tint">
+        <div>
+          <h2 class="section-title">Securely warp across the Internet as if you were on another planet!</h2>
+          <p>Sign up today for a 40 day free-trial!</p>
+          <form id="form">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="submit">
+          </form>
+        </div>
+        <div>
+          <img id="hero-image" src="Logo-480.png" alt="">
+        </div>
       </section>
+
       <section id="introduction">
-
+        <div>
+          <h2 class="section-title">So what is a VPN?</h2>
+          <p>Well I don't know, watch this:</p>
+        </div>
+        <iframe src="https://www.youtube.com/watch?v=_wQTRMBAvzg&pp=ygUOd2hhdCBpcyBhIHZwbiA%3D" controls></iframe>
       </section>
+
       <section id="features">
         <h2>Equiped with latest and greatest space-age VPN features.</h2>
       </section>
 
-      <section id="beta">
-        <h2>Become the first to beta test our uranus server!</h2>
-        <form id="form">
-  
-        </form>
-      </section>
-      <video controls id="video">
-
-      </video>
     </main>
   </body>
 </html>
