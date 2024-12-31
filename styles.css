@@ -28,7 +28,7 @@ h2 {
   justify-content: space-between;
   padding: 8px 96px;
   background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, .6);
+  box-shadow: 0px 0px 32px 16px rgba(0, 0, 0, .5);
   position: sticky;
   top: 0;
   
@@ -52,7 +52,6 @@ h2 {
   font-family: "Roboto", serif;
   font-weight: 500;
   font-style: normal;
-
 }
 
 /* Nav style */
@@ -88,9 +87,8 @@ section {
 }
 
 .background-tint {
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .5);
   background-blend-mode: multiply;
-
 }
 
 section p {
@@ -123,6 +121,39 @@ section p {
 #hero-image {
   max-width: 200px;
 }
+
+#email {
+  margin: 0;
+  width: 300px;
+  border: 0px;
+  border-radius: 20px 0 0 20px;
+  font-size: 1.2em;
+  color: black;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 8px 16px 8px 20px;
+  
+}
+
+#submit {
+  margin: 0;
+  border: 0px;
+  border-radius: 0 20px 20px 0;
+  color: white;
+  font-size: 1.2em;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 8px 20px 8px 16px;
+  background-color: #9865E0;
+}
+
+#submit:hover {
+  background-color: #7951b3;
+  
+}
+
 #introduction {
   background-color: black;
 }
