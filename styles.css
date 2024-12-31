@@ -13,16 +13,28 @@ h2 {
 }
 
 .flex-container {
-    display: flex;
+  display: flex;
 }
 
+.self-center {
+  align-self: center;
+}
+
+.align-items-stretch {
+  align-items: stretch;
+}
 
 #header {
   justify-content: space-between;
-  padding: 8px 36px;
+  padding: 8px 96px;
   background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 16px 16px rgba(0, 0, 0, .6);
+  position: sticky;
+  top: 0;
   
 }
+
+/* Header Logo */
 
 #header-logo {
   align-items: center;
@@ -32,6 +44,15 @@ h2 {
 #logo-image {
   width: 100%;
   height: 100%;
+}
+
+#logo-text {
+  color: #9865E0;
+  font-size: 1.4em;
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+
 }
 
 /* Nav style */
@@ -44,11 +65,20 @@ h2 {
 
 .nav-link, .nav-link:visited {
   text-decoration: none;
-  color: black;
+  color: #3b3b3b;
+  font-size: 1.2em;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0 20px;
+}
+
+.nav-link:hover {
+  color: #9865E0;
+
 }
 
 /* Sections styles */
-
 section {
   height: 640px;
   width: 100%;
@@ -88,10 +118,10 @@ section p {
 
 #hero div:nth-child(1) {
   /* min-width: 360px; */
-  max-width: 560px;
+  max-width: 720px;
 }
 #hero-image {
-  max-width: 240px;
+  max-width: 200px;
 }
 #introduction {
   background-color: black;
