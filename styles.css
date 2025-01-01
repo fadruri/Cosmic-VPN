@@ -1,3 +1,7 @@
+p {
+  margin: 16px 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -83,10 +87,11 @@ h2 {
 /* Sections styles */
 section {
   height: 800px;
-  width: 100%;
+
   align-items: center;
   justify-content: center;
   gap: 40px;
+  margin: 0;
 }
 
 .background-tint {
@@ -112,10 +117,7 @@ section p {
   font-weight: 500;
   font-style: normal;
   font-size: 3em;
-}
-
-#hero .section-title {
-  color: white;
+  text-align: center;
 }
 
 #hero {
@@ -125,9 +127,14 @@ section p {
   background-position: center;
 }
 
+#hero .section-title {
+  color: white;
+  text-align: start;
+}
+
 #hero div:nth-child(1) {
   /* min-width: 360px; */
-  max-width: 720px;
+  width: 600px;
 }
 
 #hero-image {
@@ -145,7 +152,6 @@ section p {
   font-weight: 400;
   font-style: normal;
   padding: 8px 16px 8px 20px;
-  
 }
 
 #submit {
@@ -167,11 +173,24 @@ section p {
 
 #introduction {
   background-color: rgb(255, 255, 255);
+  flex-direction: column;
+  gap: 0;
+}
+
+#video {
+  width: 960px; 
+  height: 540px;
+
 }
 
 footer {
   background-color: #3b3b3b;
   height: 200px;
+}
+
+#features {
+  text-align: center;
+  flex-direction: column;
 }
 
 .feature-item {
@@ -202,4 +221,56 @@ footer {
 
 .feature-item img {
   width: 120px;
+}
+
+@media only screen and (max-width: 1280px) {
+  #features {
+    height: 1800px;
+  }
+
+  #features div {
+    text-align: center;
+  }
+  
+  #feature-items {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #hero .section-title, #hero p{
+    text-align: center;
+  }
+
+  #email-form {
+    text-align: center;
+  }
+
+  #video  {
+    width: 400px;
+    height: 225px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  #hero {
+    background-size: cover;
+  }
 }
