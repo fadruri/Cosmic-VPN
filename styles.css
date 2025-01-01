@@ -71,8 +71,11 @@ h2 {
 }
 
 .nav-link, .nav-link:visited {
-  text-decoration: none;
   color: #3b3b3b;
+}
+
+.nav-link, .nav-link:visited{
+  text-decoration: none;
   font-size: 1.2em;
   font-family: "Roboto", serif;
   font-weight: 400;
@@ -185,7 +188,31 @@ section p {
 
 footer {
   background-color: #3b3b3b;
-  height: 200px;
+  padding: 20px 96px;
+}
+
+.foot-link, .foot-link:visited, #credits-list li, #credits-title {
+  color: white;
+  font-size: 1em;
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+}
+
+#credits-title {
+  font-weight: 500;
+  margin: 8px 0;
+}
+
+.foot-link:hover {
+  color: #9865E0;
+}
+
+#credits-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 8px 0;
 }
 
 #features {
